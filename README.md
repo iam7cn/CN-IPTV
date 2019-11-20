@@ -12,10 +12,10 @@
  
  
  使用notepad++  正则表达式
-“},” 替换 “},\N”
+ “},” 替换 “},\N”
  
  
-” "channel[0-9]{0,9}":{"uuid":"(.*?)","channelName":"(.*?)","channelIcon":"http://images(.*?).png"} “ 替换 “\2,http://183.207.248.71:80/cntv/live1/\2/\1”
+ ” "channel[0-9]{0,9}":{"uuid":"(.*?)","channelName":"(.*?)","channelIcon":"http://images(.*?).png"} “ 替换 “\2,http://183.207.248.71:80/cntv/live1/\2/\1”
  
   
  
