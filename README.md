@@ -17,7 +17,7 @@
  
  ” "channel[0-9]{0,9}":{"uuid":"(.*?)","channelName":"(.*?)","channelIcon":"http://images(.*?).png"} “ 替换 “\2,http://183.207.248.71:80/cntv/live1/\2/\1”
  
-  
+如果有服务器可以用php代理，  
  
 合肥移动IPTV真实地址
 合肥移动的url格式和苏州移动的格式差别不小，没有channelName，直接更改uuid即可。
