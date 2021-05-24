@@ -23,7 +23,24 @@
  使用notepad++  正则表达式把各个频道替换下播放地址就OK了 
  
 如果有服务器可以用php代理，  https://raw.githubusercontent.com/iam7cn/OTT-IPTV/master/jstv.txt 就是我自己用php代理出来的
- 
+
+
+PHP代码
+
+```
+<?php
+if(!$_GET['code']){
+    echo "404 error";
+    exit();
+}
+$code=$_GET["code"];
+$info=file_get_contents("http://looktvepg.jsa.bcs.ottcn.com:8080/ysten-lvoms-epg/epg/getChannelIndexs.shtml?deviceGroupId=1697");
+preg_match('/"'.$code.'":{"uuid":"(.*?)","channelName":"(.*?)",/i',$info,$m);
+$url = 'http://183.207.248.71:80/cntv/live1/'.$m[2].'/'.$m[1].'';
+$playurl = iconv('UTF-8', 'GBK//TRANSLIT', $url);
+header('location:'.urldecode($playurl));
+?>
+```
 
 
 
