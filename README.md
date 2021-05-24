@@ -42,5 +42,7 @@ header('location:'.urldecode($playurl));
 ?>
 ```
 
+拷贝到自己指定的php文件中?code=channel74  <code>codechannel74</code>为频道
+
 
 
