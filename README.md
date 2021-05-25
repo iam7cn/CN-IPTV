@@ -27,6 +27,8 @@
 直播源信息来自于互联网，本人仅作整理及转发。
 
 - http://iptv807.com/
+- [黑鸟博客 (guihet.com)](https://guihet.com/)
+- [恩山论坛 (right.com.cn)](https://www.right.com.cn/forum/forum-182-0.html)
 - 
 
 
